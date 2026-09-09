@@ -1,10 +1,10 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-import 'package:in_app_review_platform_interface/method_channel_in_app_review.dart';
+import 'package:in_app_review_pro_platform_interface/method_channel_in_app_review_pro.dart';
 
-/// The interface that implementations of in_app_review must implement.
+/// The interface that implementations of in_app_review_pro must implement.
 ///
 /// Platform implementations should extend this class rather than implement it
-/// as `in_app_review` does not consider newly added methods to be breaking
+/// as `in_app_review_pro` does not consider newly added methods to be breaking
 /// changes. Extending this class (using `extends`) ensures that the subclass
 /// will get the default implementation, while platform implementations that
 /// `implements` this interface will be broken by newly added

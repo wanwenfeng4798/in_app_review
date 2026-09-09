@@ -1,4 +1,4 @@
-group = "dev.britannio.in_app_review"
+group = "dev.wanwenfeng.in_app_review_pro"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -22,7 +22,7 @@ allprojects {
 apply plugin: "com.android.library"
 
 android {
-    namespace = "dev.britannio.in_app_review"
+    namespace = "dev.wanwenfeng.in_app_review_pro"
 
     compileSdk = 37
     buildToolsVersion = "37.0.0"

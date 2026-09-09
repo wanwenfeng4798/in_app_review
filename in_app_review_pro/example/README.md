@@ -1,6 +1,6 @@
-# in_app_review_example
+# in_app_review_pro_example
 
-Demonstrates how to use the in_app_review plugin.
+Demonstrates how to use the in_app_review_pro plugin.
 
 ## Getting Started
 

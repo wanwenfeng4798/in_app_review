@@ -1,49 +1,7 @@
-# [2.0.5]
-- Update tests to be compatible with the latest version of flutter.
+# [0.1.0]
 
-# [2.0.4]
-
-- Update usage of `pkg:url_launcher` to address deprecations.
-
-# [2.0.3]
-
-- `isAvailable()` now returns `false` on web.
-
-# [2.0.2]
-
-- Bump the minimum Flutter version to `2.0.0`.
-
-# [2.0.1]
-
-- Bump the minimum Dart SDK version from `2.12.0-0` to `2.12.0`.
-
-# [2.0.0]
-
-- Migrate to null safety.
-
-# [1.0.5]
-
-- Remove dependency on `package_info`.
-- Handle `openStoreListing()` with native code for Android, iOS and MacOS.
-
-# [1.0.4]
-
-- Lower dependency version constraints
-
-# [1.0.3]
-
-- Open the App Store directly instead of via the Safari View Controller.
-- Add automated tests.
-
-# [1.0.2]
-
-- Rename `openStoreListing(windowsStoreId: '')` to `openStoreListing(microsoftStoreId: '')`.
-- Update dependencies.
-
-# [1.0.1]
-
-- Remove unnecessary files.
-
-# [1.0.0]
-
-- Initial release.
+- Initial `in_app_review_pro_platform_interface` release.
+- Renamed from `in_app_review_platform_interface` for the `in_app_review_pro` package.
+- Updates repository URLs to https://github.com/wanwenfeng4798/in_app_review_pro.
+- Requires Flutter 3.44+ / Dart 3.12+.
+- Method channel id updated to `dev.wanwenfeng.in_app_review_pro`.

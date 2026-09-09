@@ -1,13 +1,12 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:in_app_review_platform_interface/method_channel_in_app_review.dart';
-import 'package:platform/platform.dart';
+import 'package:in_app_review_pro_platform_interface/method_channel_in_app_review_pro.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   late MethodChannelInAppReview methodChannelInAppReview;
   late List<MethodCall> log = [];
-  const MethodChannel channel = MethodChannel('dev.britannio.in_app_review');
+  const MethodChannel channel = MethodChannel('dev.wanwenfeng.in_app_review_pro');
 
   setUp(() {
     methodChannelInAppReview = MethodChannelInAppReview();
@@ -71,8 +70,7 @@ void main() {
       'should invoke the openStoreListing method channel on Android',
       () async {
         // ARRANGE
-        methodChannelInAppReview.platform =
-            FakePlatform(operatingSystem: 'android');
+        methodChannelInAppReview.platform = TargetPlatform.android;
 
         // ACT
         await methodChannelInAppReview.openStoreListing();
@@ -88,8 +86,7 @@ void main() {
       'should invoke the openStoreListing method channel on iOS',
       () async {
         // ARRANGE
-        methodChannelInAppReview.platform =
-            FakePlatform(operatingSystem: 'ios');
+        methodChannelInAppReview.platform = TargetPlatform.iOS;
         final appStoreId = "store_id";
 
         // ACT
@@ -104,8 +101,7 @@ void main() {
       'should invoke the openStoreListing method channel on MacOS',
       () async {
         // ARRANGE
-        methodChannelInAppReview.platform =
-            FakePlatform(operatingSystem: 'macos');
+        methodChannelInAppReview.platform = TargetPlatform.macOS;
         final appStoreId = "store_id";
 
         // ACT
@@ -120,8 +116,7 @@ void main() {
       'should invoke the openStoreListing method channel on Windows',
       () async {
         // ARRANGE
-        methodChannelInAppReview.platform =
-            FakePlatform(operatingSystem: 'windows');
+        methodChannelInAppReview.platform = TargetPlatform.windows;
         final microsoftStoreId = 'store_id';
 
         // ACT

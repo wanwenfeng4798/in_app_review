@@ -5,7 +5,7 @@
 import FlutterMacOS
 import Foundation
 
-import in_app_review
+import in_app_review_pro
 import url_launcher_macos
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {

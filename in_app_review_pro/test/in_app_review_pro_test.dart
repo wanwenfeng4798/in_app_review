@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:in_app_review/in_app_review.dart';
-import 'package:in_app_review_platform_interface/in_app_review_platform_interface.dart';
+import 'package:in_app_review_pro/in_app_review_pro.dart';
+import 'package:in_app_review_pro_platform_interface/in_app_review_pro_platform_interface.dart';
 import 'package:mockito/mockito.dart';
 
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';

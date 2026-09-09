@@ -8,4 +8,4 @@ assignees: ''
 ---
 
 **Read testing guidelines**
-- [ ] Have you read the testing guidelines at https://pub.dev/packages/in_app_review#testing-read-carefully?
+- [ ] Have you read the testing guidelines at https://pub.dev/packages/in_app_review_pro#testing-read-carefully?

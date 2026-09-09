@@ -1,8 +1,8 @@
-# in_app_review
+# in_app_review_pro
 
-![tests](https://github.com/britannio/in_app_review/workflows/tests/badge.svg?branch=master)
-[![pub package](https://img.shields.io/pub/v/in_app_review.svg)](https://pub.dartlang.org/packages/in_app_review) ![In-App Review Android Demo](https://raw.githubusercontent.com/britannio/in_app_review/master/in_app_review/screenshots/android.jpg)
-![In-App Review iOS Demo](https://raw.githubusercontent.com/britannio/in_app_review/master/in_app_review/screenshots/ios.png)
+![tests](https://github.com/wanwenfeng4798/in_app_review_pro/workflows/tests/badge.svg?branch=master)
+[![pub package](https://img.shields.io/pub/v/in_app_review_pro.svg)](https://pub.dartlang.org/packages/in_app_review_pro) ![In-App Review Android Demo](https://raw.githubusercontent.com/wanwenfeng4798/in_app_review_pro/master/in_app_review_pro/screenshots/android.jpg)
+![In-App Review iOS Demo](https://raw.githubusercontent.com/wanwenfeng4798/in_app_review_pro/master/in_app_review_pro/screenshots/ios.png)
 
 # Description
 
@@ -18,7 +18,7 @@ It uses the [In-App Review](https://developer.android.com/guide/playcore/in-app-
 The following code triggers the In-App Review prompt. This should **not** be used frequently as the underlying API's enforce strict quotas on this feature to provide a great user experience.
 
 ```dart
-import 'package:in_app_review/in_app_review.dart';
+import 'package:in_app_review_pro/in_app_review_pro.dart';
 
 final InAppReview inAppReview = InAppReview.instance;
 
@@ -46,7 +46,7 @@ if (await inAppReview.isAvailable()) {
 The following code opens the Google Play Store on Android, the App Store with a review screen on iOS & MacOS and the Microsoft Store on Windows. Use this if you want to permanently provide a button or other call-to-action to let users leave a review as it isn't restricted by a quota.
 
 ```dart
-import 'package:in_app_review/in_app_review.dart';
+import 'package:in_app_review_pro/in_app_review_pro.dart';
 
 final InAppReview inAppReview = InAppReview.instance;
 

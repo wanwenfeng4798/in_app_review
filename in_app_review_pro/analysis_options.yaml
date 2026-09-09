@@ -4,6 +4,9 @@ analyzer:
     - android/**
     - ios/**
     - macos/**
+  errors:
+    # Local monorepo path dependency until platform_interface is published.
+    invalid_dependency: ignore
 include: package:flutter_lints/flutter.yaml
 
 # Additional information about this file can be found at

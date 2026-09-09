@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "in_app_review",
+    name: "in_app_review_pro",
     platforms: [
         .macOS("10.14")
     ],
     products: [
-        .library(name: "in-app-review", targets: ["in_app_review"])
+        .library(name: "in-app-review-pro", targets: ["in_app_review_pro"])
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework")
     ],
     targets: [
         .target(
-            name: "in_app_review",
+            name: "in_app_review_pro",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ],

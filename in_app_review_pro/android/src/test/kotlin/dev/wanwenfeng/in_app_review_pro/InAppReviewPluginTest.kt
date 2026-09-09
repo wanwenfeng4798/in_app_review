@@ -1,4 +1,4 @@
-package dev.britannio.in_app_review
+package dev.wanwenfeng.in_app_review_pro
 
 //import io.flutter.plugin.common.MethodCall
 //import io.flutter.plugin.common.MethodChannel

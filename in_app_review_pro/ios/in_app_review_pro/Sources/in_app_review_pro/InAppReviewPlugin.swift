@@ -4,7 +4,7 @@ import StoreKit
 
 public class InAppReviewPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "dev.britannio.in_app_review", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "dev.wanwenfeng.in_app_review_pro", binaryMessenger: registrar.messenger())
         let instance = InAppReviewPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

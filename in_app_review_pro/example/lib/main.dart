@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:in_app_review/in_app_review.dart';
+import 'package:in_app_review_pro/in_app_review_pro.dart';
 
 void main() => runApp(const InAppReviewExampleApp());
 
@@ -32,7 +32,7 @@ class InAppReviewExampleAppState extends State<InAppReviewExampleApp> {
 
         setState(() {
           // This plugin cannot be tested on Android by installing your app
-          // locally. See https://github.com/britannio/in_app_review#testing for
+          // locally. See https://github.com/wanwenfeng4798/in_app_review_pro#testing for
           // more information.
           _availability = isAvailable && !Platform.isAndroid
               ? Availability.available

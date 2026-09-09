@@ -2,21 +2,23 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:platform/platform.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-import 'in_app_review_platform_interface.dart';
+import 'in_app_review_pro_platform_interface.dart';
 
 /// An implementation of [InAppReviewPlatform] that uses method channels.
 class MethodChannelInAppReview extends InAppReviewPlatform {
-  MethodChannel _channel = MethodChannel('dev.britannio.in_app_review');
-  Platform _platform = const LocalPlatform();
+  MethodChannel _channel = MethodChannel('dev.wanwenfeng.in_app_review_pro');
+  TargetPlatform? _platformOverride;
+
+  TargetPlatform get _platform =>
+      _platformOverride ?? defaultTargetPlatform;
 
   @visibleForTesting
   set channel(MethodChannel channel) => _channel = channel;
 
   @visibleForTesting
-  set platform(Platform platform) => _platform = platform;
+  set platform(TargetPlatform platform) => _platformOverride = platform;
 
   @override
   Future<bool> isAvailable() async {
@@ -34,10 +36,10 @@ class MethodChannelInAppReview extends InAppReviewPlatform {
     String? appStoreId,
     String? microsoftStoreId,
   }) async {
-    final bool isiOS = _platform.isIOS;
-    final bool isMacOS = _platform.isMacOS;
-    final bool isAndroid = _platform.isAndroid;
-    final bool isWindows = _platform.isWindows;
+    final bool isiOS = _platform == TargetPlatform.iOS;
+    final bool isMacOS = _platform == TargetPlatform.macOS;
+    final bool isAndroid = _platform == TargetPlatform.android;
+    final bool isWindows = _platform == TargetPlatform.windows;
 
     if (isiOS || isMacOS) {
       await _channel.invokeMethod(
@@ -53,7 +55,7 @@ class MethodChannelInAppReview extends InAppReviewPlatform {
       );
     } else {
       throw UnsupportedError(
-        'Platform(${_platform.operatingSystem}) not supported',
+        'Platform($_platform) not supported',
       );
     }
   }

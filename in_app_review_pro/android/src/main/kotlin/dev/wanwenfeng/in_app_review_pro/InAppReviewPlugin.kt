@@ -1,4 +1,4 @@
-package dev.britannio.in_app_review
+package dev.wanwenfeng.in_app_review_pro
 
 import android.app.Activity
 import android.content.Context
@@ -30,7 +30,7 @@ class InAppReviewPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(
             flutterPluginBinding.binaryMessenger,
-            "dev.britannio.in_app_review"
+            "dev.wanwenfeng.in_app_review_pro"
         )
         channel.setMethodCallHandler(this)
         // Initialise context
