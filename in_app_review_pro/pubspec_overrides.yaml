@@ -1,0 +1,4 @@
+# Local monorepo override. Ignored by `dart pub publish`.
+dependency_overrides:
+  in_app_review_pro_platform_interface:
+    path: ../in_app_review_pro_platform_interface

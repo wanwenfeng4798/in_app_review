@@ -106,7 +106,7 @@ packages:
     source: path
     version: "0.1.0"
   in_app_review_pro_platform_interface:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../in_app_review_pro_platform_interface"
       relative: true
