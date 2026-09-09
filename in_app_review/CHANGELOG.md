@@ -3,7 +3,7 @@
 - Updates the minimum supported SDK version to Flutter 3.44/Dart 3.12.
 - Migrates to built-in Kotlin.
 - Upgrades Android Gradle Plugin to 9.4.0 and Gradle to 9.7.1 (Java 17).
-- Aligns Android toolchain with compileSdk/targetSdk 37, build-tools 37.0.0, and NDK 30.0.16138531.
+- Aligns Android toolchain with compileSdk/targetSdk 37, build-tools 37.0.0, NDK 30.0.16138531, and Kotlin 2.4.10.
 - Aligns Swift Package Manager manifests with the FlutterFramework dependency.
 - Raises the macOS CocoaPods deployment target to 10.14 to match Package.swift and docs.
 
